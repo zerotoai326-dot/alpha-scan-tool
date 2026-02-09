@@ -103,7 +103,7 @@ if raw_pairs:
             
             # כפתור קנייה (Affiliate)
             # הקישור הזה שולח לבוט בטלגרם עם כתובת המטבע מוכנה לקנייה
-            buy_link = f"https://t.me/bonkbot?start=ref_your_id_{item['address']}"
+           buy_link = f"https://t.me/MaestroSniperBot?start=67bcf12a-{item['address']}"
             cols[5].link_button("🚀 Buy (BonkBot)", buy_link)
 else:
     st.error("לא ניתן למשוך נתונים כרגע. נסה שוב בעוד דקה.")
