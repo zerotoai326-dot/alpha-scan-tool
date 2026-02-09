@@ -23,6 +23,7 @@ with st.sidebar:
     st.image("https://cryptologos.cc/logos/solana-sol-logo.png", width=50)
     st.header("💎 פלטפורמות מומלצות")
     st.markdown("### 🤖 מסחר מהיר")
+    # קישור השותפים שלך ל-Maestro
     st.markdown("[🚀 Trade via Maestro (Referral)](https://t.me/MaestroSniperBot?start=67bcf12a)")
     st.write("---")
     st.caption("הכלי סורק מטבעות עם ווליום מעל $50k ונזילות מעל $10k.")
@@ -92,6 +93,6 @@ if raw_pairs:
             buy_link = f"https://t.me/MaestroSniperBot?start=67bcf12a-{item['address']}"
             cols[5].link_button("🚀 Buy via Bot", buy_link)
 else:
-    st.error("השרת של DexScreener עמוס כרגע. האתר יתרענן אוטומטית בעוד כמה שניות...")
+    st.error("מתחבר לנתונים... האתר יתרענן אוטומטית בעוד כמה שניות")
     if st.button("נסה רענון ידני"):
         st.rerun()
